@@ -1,0 +1,39 @@
+#wrapper {
+    margin: 24px auto;
+    width: 1200px;
+    padding: 24px;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+    border-radius:50px;
+   
+}
+  
+header {
+    grid-column:span 12;
+}
+
+
+nav {
+    grid-column: span 12;
+    text-align: center;
+}
+
+main {
+grid-column: span 12;
+}
+
+.info {
+    grid-column: span 4;
+}
+
+.container {
+    grid-column:span 4;
+    margin-bottom: 20px;
+}
+
+footer {
+    grid-column:span 12;
+}
+
