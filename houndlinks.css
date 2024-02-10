@@ -1,48 +1,65 @@
-header a {
-    color:black;
+    header a {
+    color:ghostwhite;
+    text-shadow: 3px 3px 3px steelblue;
     text-decoration:none;
-}
+    font-size: 2em;
+    }
 
-header a:visited {
-    color:black;
+    header a:visited {
+    color:ghostwhite;
+    text-shadow: 3px 3px 3px steelblue;
     text-decoration:none;
-}
+    }
 
-header a:hover {
+    header a:hover {
     color:red;
-    text-decoration: line-through;
-}
+    text-decoration:none;
+    }
+
+    nav ul {
+    display:flex;
+    margin:0;
+    padding:0 100px;
+    float:right;
+
+    }
 
 
-nav li {
-    border: 1px solid rgb(0, 0, 0);
-    width: 25%;
+    nav li {
+    list-style: none;
+    width: 100%;
     padding: 0px;
-    background: red;
-    color: white;
-    display:inline-block;
-    border-radius: 10px;
+    color: silver;
     }
     nav li a {
-        color: white;
+        color: silver;
         text-decoration: none;
         display: block;
-        padding: 10px;
-        transition: background-color 10s;
-        text-align: center;
+        padding: 0 100px;
+        text-decoration: none;
+        font-weight:bold;
+        line-height: 100px;
+        
         
     }
     
-    nav li a:hover {
-        background: rgb(255,255,255);
-        background: radial-gradient(circle, rgba(255,255,255,1) 0%, grey 100%);
+    nav li a:active {
+        background: steelblue;
         color:red;
-        border: 1px solid white;
-        border-radius: 10px;
+        border: .5px solid silver;
+        border-radius: 15px;
     }
 
+    nav li a:hover {
+        background: silver;
+        color:red;
+        border: .5px solid steelblue;
+        border-radius: 15px;
+    }
+   
     footer a {
         color:black;
+        font-size: 2em;
         text-decoration:none;
     }
     
@@ -53,5 +70,5 @@ nav li {
     
     footer a:hover {
         color:red;
-        text-decoration: line-through;
+        text-decoration: none;
     }
