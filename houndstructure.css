@@ -1,5 +1,5 @@
 body {
-background-color: steelblue;
+background-color: ghostwhite;
 }
 #wrapper {
     width: 100%;
@@ -10,25 +10,32 @@ background-color: steelblue;
    
 }
 
-.logo {
-    grid-column: span 12;
-    padding:0;
-    background-image: url(HSP-LIM.png);
-    background-size: cover;
-}
-  
 header {
-    grid-column:span 12;
-    padding:10px 100px;
-    box-sizing:border-box;
+    grid-column: span 12;
+    padding: 10px 100px;
+    box-sizing: border-box;
     position: sticky;
     top: 0;
     background-color: silver;
+    z-index: 999; /* Ensure the header stays on top */
+}
+
+header h1 {
+    font-size: 1.2em;
 }
 
 nav {
-    ;
+    grid-column: span 12;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0px;
+    z-index: 999; /* Ensure the navigation stays on top */
 }
+  
+
 section {
     grid-column:span 12;
     width:100%;
@@ -36,12 +43,77 @@ section {
 }
 
 section.sec1 {
-    grid-column:span 12;
-    background:url(after\ hill.jpg);
+    grid-column: span 12;
+    font-family: "owners-xxwide", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    font-size: 1em;
+    background: url(IMG_0400.JPG) no-repeat center center;
     background-size: cover;
-    border: 5px solid black;
-
+    padding: 0;
+    position: relative;
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 25%; /* Adjust left position as needed */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust width as needed */
+    color: white;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.content p {
+    margin-top: 10px; /* Adjust spacing between title and paragraph */
+}
+
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    max-width: 80%; /* Adjust maximum width as needed */
+    box-sizing: border-box;
+}
+
+.text-container h2,
+.text-container p {
+    margin: 0; /* Remove default margins */
+    font-size: inherit; /* Inherit font size */
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0; /* Remove default margins */
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0; /* Remove default margins */
+}
+
+
+
 
 section.sec2 {
     padding:100px;
@@ -53,14 +125,15 @@ section.sec2 h2 {
     font-size: 3em;
     margin: 0;
     padding:0 0 20px;
-    color: #fff;
+    color: black;
 }
 
 section.sec2 p {
     font-size: 1.2em;
     margin: 0;
     padding:0;
-    color: #fff;
+    color: black;
+    
 }
 
 section.sec3 {
@@ -79,18 +152,25 @@ section.sec4 {
     font-family: "owners-xxwide", sans-serif;
     font-weight: 700;
     font-style: italic;
-  border: 5px solid silver;
-  background-color: red;
-  color:ghostwhite;
-  text-shadow: 3px 3px 3px steelblue;
-  margin-left: 100px;
-  padding:10px;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  font-size: 24px;
-  background-size: cover;
-  width:75%;
+    border: 5px solid silver;
+    background-color: palevioletred;
+    color:ghostwhite;
+    text-shadow: 3px 3px 3px steelblue;
+    text-align: center;
+    margin-left: 10px;
+    padding:10px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 24px;
+    box-sizing: border-box;
+    background-size: cover;
+    width:calc(50% - 10px);
+    height: fit-content;
+}
+
+section.sec4 p {
+    font-size: .8em;
 }
 
 nav {
@@ -113,13 +193,61 @@ main h2 {
     font-family: "owners-xxwide", sans-serif;
     font-weight: 700;
     font-style: italic;
-  color:ghostwhite;
-  text-shadow: 3px 3px 3px red;
+  color:steelblue;
+  text-shadow: 3px 3px 3px silver;
   font-size: 36px;
   text-align: center;
 }
 
+.The {
+    grid-column: span 12;
+    text-align: center;
+    border: 5px solid silver;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color:pink;
+    text-shadow: 3px 3px 3px black;
+}
 
+.fam {
+    grid-column: span 8;
+    text-align: center;
+    border: 5px solid red;
+    border-radius: 25px;
+    color:black;
+    text-shadow: 3px 3px 3px lightblue;
+
+}
+
+.dog {
+    grid-column: span 12;
+    text-align: center;
+    border: 5px solid silver;
+    border-radius: 25px;
+    color:black;
+    margin-top: 20px;
+    text-shadow: 3px 3px 3px silver;
+}
+
+.myCarousel {  
+    grid-column:span 12;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    max-height: 800px; /* Adjust the maximum height as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+    margin-top: 30px;
+    border: 20px solid silver;
+    background-color: steelblue;
+}
+  
+.myCarousel .f-carousel__slide {
+   padding:0;
+}
+.myCarousel .f-carousel__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 
 .box {
@@ -132,12 +260,6 @@ main h2 {
 
 .info {
     grid-column: span 4;
-}
-
-.container {
-    grid-column:span 4;
-    margin-bottom: 20px;
-    
 }
 
 footer {

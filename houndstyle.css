@@ -16,23 +16,43 @@ font-style: oblique;
 }
 
 .box {
-  font-family: "owners-xxwide", sans-serif;
-font-weight: 700;
-font-style: normal;
-color:black;
-text-shadow: 3px 3px 3px red;
-font-size: 1.5em;
-background-color: gray;
-padding:0;
-text-align: center;
+  grid-column:span 12;
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
+h2 {
+  color: palevioletred;
+  text-shadow: 3px 3px 3px silver;
+}
+h2, p {
+  margin: 0; /* Remove default margins */
+}
+.The {
+  font-family: "owners-xxwide", sans-serif;
+font-weight: 700;
+font-style: oblique;
+padding: 10px;
+}
+.fam {
+  font-family: "owners-xxwide", sans-serif;
+font-weight: 700;
+font-style: oblique;
+padding: 10px;
+
+}
+.dog {
+  font-family: "owners-xxwide", sans-serif;
+font-weight: 700;
+font-style: oblique;
+}
 .info {
   font-family: "owners-xxwide", sans-serif;
   font-weight: 400;
   font-style: italic;
 border: 5px solid silver;
-background-color: red;
+background-color: steelblue;
 color:silver;
 margin: 10px;
 padding:10px;
@@ -55,6 +75,8 @@ text-align: center;
 font-size: larger;
 }
 
+
+/*
 .container {
     position: sticky;
     width:100%;
@@ -76,3 +98,4 @@ font-size: larger;
     opacity: 0;
     cursor:crosshair;
 }
+*/
