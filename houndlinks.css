@@ -12,7 +12,7 @@
     }
 
     header a:hover {
-    color:steelblue;
+    color:red;
     text-decoration:none;
     }
 
@@ -32,7 +32,7 @@
     color: silver;
     }
     nav li a {
-        color: steelblue;
+        color: silver;
         text-decoration: none;
         display: block;
         padding: 0 100px;
@@ -45,14 +45,14 @@
     
     nav li a:active {
         background: steelblue;
-        color:palevioletred;
+        color:red;
         border: .5px solid silver;
         border-radius: 15px;
     }
 
     nav li a:hover {
         background: silver;
-        color:palevioletred;
+        color:red;
         border: .5px solid steelblue;
         border-radius: 15px;
     }
@@ -69,6 +69,6 @@
     }
     
     footer a:hover {
-        color:steelblue;
+        color:red;
         text-decoration: none;
     }

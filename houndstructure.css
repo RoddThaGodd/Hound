@@ -10,110 +10,59 @@ background-color: ghostwhite;
    
 }
 
+  
 header {
-    grid-column: span 12;
-    padding: 10px 100px;
-    box-sizing: border-box;
+    grid-column:span 12;
+    padding:10px 100px;
+    box-sizing:border-box;
     position: sticky;
     top: 0;
     background-color: silver;
-    z-index: 999; /* Ensure the header stays on top */
-}
-
-header h1 {
-    font-size: 1.2em;
 }
 
 nav {
-    grid-column: span 12;
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    position: sticky;
-    top: 0px;
-    z-index: 999; /* Ensure the navigation stays on top */
+    
 }
-  
-
 section {
     grid-column:span 12;
     width:100%;
     height: 100vh;
 }
 
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    grid-column:span 12;
+      border: 5px solid black;
+      margin-right: 50px;
+      margin-left: 50px;
+}
+
+.background {
+    background: green;
+    background-size: cover;
+    width: 100%;
+
+
+}
+  
 section.sec1 {
     grid-column: span 12;
     font-family: "owners-xxwide", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-    font-size: 1em;
-    background: url(IMG_0400.JPG) no-repeat center center;
-    background-size: cover;
-    padding: 0;
-    position: relative;
+font-weight: 700;
+font-style: normal;
+color:black;
+text-shadow: 3px 3px 3px red;
+font-size: 1em;
+background: black opacity 15%;
+padding:0;
+position: absolute;
+left: 250px;
+z-index: 9;
+
+
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 25%; /* Adjust left position as needed */
-    transform: translate(-50%, -50%);
-    width: 80%; /* Adjust width as needed */
-    color: white;
-    text-align: center;
-}
-
-.content h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.content p {
-    margin-top: 10px; /* Adjust spacing between title and paragraph */
-}
-
-
-.text-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    padding: 20px;
-    max-width: 80%; /* Adjust maximum width as needed */
-    box-sizing: border-box;
-}
-
-.text-container h2,
-.text-container p {
-    margin: 0; /* Remove default margins */
-    font-size: inherit; /* Inherit font size */
-}
-
-h2 {
-    font-size: 2em;
-    margin: 0; /* Remove default margins */
-}
-
-p {
-    font-size: 1.2em;
-    margin: 0; /* Remove default margins */
-}
-
-
-
 
 section.sec2 {
     padding:100px;
@@ -153,24 +102,18 @@ section.sec4 {
     font-weight: 700;
     font-style: italic;
     border: 5px solid silver;
-    background-color: palevioletred;
+    background-color: red;
     color:ghostwhite;
     text-shadow: 3px 3px 3px steelblue;
-    text-align: center;
     margin-left: 10px;
     padding:10px;
     border-top-right-radius: 50px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     font-size: 24px;
-    box-sizing: border-box;
     background-size: cover;
-    width:calc(50% - 10px);
+    width:75%;
     height: fit-content;
-}
-
-section.sec4 p {
-    font-size: .8em;
 }
 
 nav {
@@ -193,8 +136,8 @@ main h2 {
     font-family: "owners-xxwide", sans-serif;
     font-weight: 700;
     font-style: italic;
-  color:steelblue;
-  text-shadow: 3px 3px 3px silver;
+  color:ghostwhite;
+  text-shadow: 3px 3px 3px red;
   font-size: 36px;
   text-align: center;
 }
@@ -230,23 +173,23 @@ main h2 {
     text-shadow: 3px 3px 3px silver;
 }
 
-.myCarousel {  
-    grid-column:span 12;
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    max-height: 800px; /* Adjust the maximum height as needed */
-    margin: 0 auto; /* Center the carousel horizontally */
-    margin-top: 30px;
-    border: 20px solid silver;
-    background-color: steelblue;
+.car {
+    grid-column: span 12;
+}
+#myCarousel {  
+    width: 100%;
 }
   
-.myCarousel .f-carousel__slide {
-   padding:0;
+#myCarousel .f-carousel__slide {
+    text-align: center;
+    padding-bottom: -5px;
+    border: 20px solid rgb(124, 7, 191);
+    background:transparent;
+    border-radius: 20px;
 }
-.myCarousel .f-carousel__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+
+.hunnid {
+    width:100%;
 }
 
 
