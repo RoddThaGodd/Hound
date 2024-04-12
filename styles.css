@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: steelblue;
+    background-color: white;
     color: #fff;
     padding: 20px 0;
     display: block; /* Use flexbox for layout */
@@ -32,7 +32,8 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: palevioletred;
+    font-size: larger;
 }
 
 .logo {
@@ -40,6 +41,7 @@ header nav ul li a {
     height: auto; /* Maintain aspect ratio */
     margin-right: 0px; /* Add some space between logo and text */
     padding:0;
+    margin-left: 40%;
 }
 
 main {
@@ -110,7 +112,7 @@ footer {
 }
 
 #services ul {
-    color: red;
+    color: palevioletred;
     font-family: "playfair-display", serif;
     font-weight: 900;
     font-style: italic;
@@ -121,10 +123,13 @@ h2 {
     font-family: "playfair-display", serif;
     font-weight: 900;
     font-style: normal;
+    text-shadow: 3px 3px 3px gray;
 }
 
 p {
     font-family: "playfair-display", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: larger;
+    color:black;
 }
