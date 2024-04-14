@@ -20,6 +20,11 @@ header {
     font-style: normal;
 }
 
+nav {
+    background-color: steelblue;
+    padding: 50px;
+}
+
 header nav ul {
     list-style-type: none;
     margin-left: auto; /* Push the navigation to the right */
@@ -27,7 +32,7 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 header nav ul li a {
@@ -41,7 +46,7 @@ header nav ul li a {
     height: auto; /* Maintain aspect ratio */
     margin-right: 0px; /* Add some space between logo and text */
     padding:0;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 
 main {
@@ -116,6 +121,7 @@ footer {
     font-family: "playfair-display", serif;
     font-weight: 900;
     font-style: italic;
+    font-size: larger;
 }
 
 h2 {
