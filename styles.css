@@ -21,13 +21,13 @@ header {
 }
 
 nav {
-    background-color: steelblue;
+    background-color:#0098c3;
     padding: 50px;
 }
 
 header nav ul {
     list-style-type: none;
-    margin-left: auto; /* Push the navigation to the right */
+    margin-left: auto;
 }
 
 header nav ul li {
@@ -37,8 +37,9 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: palevioletred;
-    font-size: larger;
+    color: #f1044b;
+    text-shadow: 3px 3px 3px white;
+    font-size: x-large;
 }
 
 .logo {
@@ -117,7 +118,7 @@ footer {
 }
 
 #services ul {
-    color: palevioletred;
+    color:  #f1044b;
     font-family: "playfair-display", serif;
     font-weight: 900;
     font-style: italic;
@@ -125,7 +126,7 @@ footer {
 }
 
 h2 {
-    color:steelblue;
+    color:#0098c3;
     font-family: "playfair-display", serif;
     font-weight: 900;
     font-style: normal;
