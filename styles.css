@@ -125,6 +125,10 @@ footer {
     font-size: larger;
 }
 
+#services p {
+    font-size: medium;
+}
+
 h2 {
     color:#0098c3;
     font-family: "playfair-display", serif;
