@@ -15,22 +15,32 @@
     text-decoration:none;
     }
 
+    nav {
+        align-items: flex-end;
+        width: 100%;
+    }
     nav ul {
-    display:flex;
-    margin:0;
-    padding:0 100px;
-    float:right;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end; /* Align items to the right */
+        position: absolute; /* Position the ul element */
+        top: 0px; /* Position it vertically in the middle */
+        right: 0px; /* Position it on the right side */
+        padding-right: 10%;
+        /*transform: translateY(-50%); /* Adjust vertical position */
+        z-index: 999; /* Ensure it overlays on top of the hero image */
 
     }
 
 
     nav li {
     list-style: none;
-    width: 100%;
+    display: inline;
     padding: 0px;
     color: silver;
     }
-    nav li a {
+
+    nav ul li a {
         color: silver;
         text-decoration: none;
         display: block;
@@ -38,7 +48,8 @@
         text-decoration: none;
         font-weight:bold;
         line-height: 100px;
-        
+        margin-left: 1rem;
+        z-index: 999;
         
     }
     

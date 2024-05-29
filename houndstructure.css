@@ -11,28 +11,36 @@ body {
 }
 
 header {
-    grid-column: span 12;
     box-sizing: border-box;
     position: sticky;
+    display: inline-block;
     top: 0;
+    padding: 20px 0;
     background-color: silver;
     width: 100%;
-    z-index: 999;
+    z-index: 5;
     text-align: center;
     font-family: "owners-xxwide", sans-serif;
     font-weight: 700;
     font-style: oblique;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.photos {
+    height: 450px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 .logo {
-    grid-column: span 3;
-    width: 100px;
-    /* Set the width of the logo */
-    height: auto;
-    /* Maintain aspect ratio */
-    padding: 0;
-    margin: 0;
-    float: left;
+    width: 200px; /* Set the width of the logo */
+    position: absolute; /* Position the logo */
+    z-index: 3;
+    display: flex; /* Add display flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
 h1 {
@@ -66,11 +74,8 @@ nav {
 }
 
 main {
-    grid-column: span 12;
-    padding: 20px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 24px;
-    padding: 20px;
+    padding-top: 0;
+    top:0;
     background-color:#0098c3
 }
 
@@ -81,13 +86,28 @@ p {
     font-style: normal;
 }
 
-.photo {
-    grid-column: span 12;
+main .photo {
+    position: relative; /* Change position to relative */
+    top: auto; /* Remove top property */
+    width: 100%; /* Set the width of the photo to be the width of the viewport */
+    height: 450px; /* Set the maximum height of the photo */
+    background-size: cover; /* Scale the photo to cover the entire container */
+    background-position: center; /* Center the photo within the container */
+    background-repeat: no-repeat; /* Prevent the photo from repeating */
+    object-fit: cover; /* Scale the photo to cover the entire container */
+    z-index: 2;
+    display: inline-block; /* Change display to inline-block */
 }
 
-.photo img {
-    width: 100%;
-    height: auto;
+
+.galleryPhoto {
+    width: 80%; /* Set the width of the photo to be 80% of the viewport */
+    height: 350px; /* Automatically adjust the height based on the aspect ratio */
+    max-height: 400px; /* Set the maximum height of the photo */
+    background-size: cover; /* Scale the photo to cover the entire container */
+    background-position: center; /* Center the photo within the container */
+    background-repeat: no-repeat; /* Prevent the photo from repeating */
+    object-fit: cover; /* Scale the photo to cover the entire container */
 }
 
 .container {
@@ -117,12 +137,15 @@ footer {
     width: 100%;
     overflow: hidden;
     grid-column: span 12;
+    position: relative;
 }
 
 .swiper-slide img {
     width: 100%;
     height: auto;
     display: block;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -153,3 +176,15 @@ footer {
     border:5px solid #f1044b;
     margin: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+    header nav ul li a{
+        margin-left: 1rem; /* Add spacing between list items */
+        text-decoration: none;
+        color: #f1044b;
+        text-shadow: 3px 3px 3px white;
+        font-size: large;
+        z-index: 1;
+    }
+    
+  }
