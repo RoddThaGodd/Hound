@@ -1,15 +1,13 @@
-    header a {
+header a {
     color:ghostwhite;
     text-shadow: 3px 3px 3px #0098c3;
     text-decoration:none;
     }
-
     header a:visited {
     color:ghostwhite;
     text-shadow: 3px 3px 3px #0098c3;
     text-decoration:none;
     }
-
     header a:hover {
     color:#f1044b;
     text-decoration:none;
@@ -40,6 +38,7 @@
     color: silver;
     }
 
+
     nav ul li a {
         color: silver;
         text-decoration: none;
@@ -50,16 +49,14 @@
         line-height: 100px;
         margin-left: 1rem;
         z-index: 999;
-        
+
     }
-    
     nav li a:active {
         background: #0098c;
         color:#f1044b;
         border: .5px solid silver;
         border-radius: 15px;
     }
-
     nav li a:hover {
         background: silver;
         color:#f1044b;
@@ -77,14 +74,12 @@
         
         
     }
-
     main a:hover {
         background: silver;
         color:#f1044b;
         border: .5px solid #0098c;
         border-radius: 15px;
     }
-
     footer a {
         color:black;
         font-size: 2em;
