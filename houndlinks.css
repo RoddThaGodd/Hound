@@ -1,6 +1,6 @@
 header a {
     color:ghostwhite;
-    text-shadow: 3px 3px 3px #0098c3;
+    text-shadow: 3px 3px 3px #f1044b;
     text-decoration:none;
     }
     header a:visited {
@@ -9,7 +9,7 @@ header a {
     text-decoration:none;
     }
     header a:hover {
-    color:#f1044b;
+    color:#0098c3;
     text-decoration:none;
     }
 
@@ -20,11 +20,11 @@ header a {
     nav ul {
         width: 100%;
         display: flex;
-        justify-content: flex-end; /* Align items to the right */
+        justify-content:flex-start; /* Align items to the right */
         position: absolute; /* Position the ul element */
         top: 0px; /* Position it vertically in the middle */
-        right: 0px; /* Position it on the right side */
-        padding-right: 10%;
+        left: 0px; /* Position it on the right side */
+        padding-left: 10%;
         /*transform: translateY(-50%); /* Adjust vertical position */
         z-index: 999; /* Ensure it overlays on top of the hero image */
 
@@ -36,8 +36,8 @@ header a {
     display: inline;
     padding: 0px;
     color: silver;
+    
     }
-
 
     nav ul li a {
         color: silver;
@@ -52,15 +52,15 @@ header a {
 
     }
     nav li a:active {
-        background: #0098c;
-        color:#f1044b;
+        background: #0098c3;
+        color: ;
         border: .5px solid silver;
         border-radius: 15px;
     }
     nav li a:hover {
         background: silver;
-        color:#f1044b;
-        border: .5px solid #0098c;
+        color:#0098c3;
+        border: .5px solid #0098c3;
         border-radius: 15px;
     }
    
